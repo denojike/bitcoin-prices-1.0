@@ -10,21 +10,8 @@ export default class Currencies extends Component {
     selectedPrice: ""
   };
 
-  // getCurrencies = () => {
-  //   axios
-  //     .get("https://api.coindesk.com/v1/bpi/currentprice.json")
-  //     .then(currencies => {
-  //       const currency = currencies.data.bpi;
-  //       this.setState({ currency });
-  //       console.log(currency);
-  //     });
-  // };
-
-  checkCode = code => {};
-
-  changeCurrency = e => {
-    let code = e.target.value;
-
+  // Get bitcoin prices
+  getCurrencies = code => {
     axios
       .get("https://api.coindesk.com/v1/bpi/currentprice.json")
       .then(currencies => {
@@ -38,8 +25,12 @@ export default class Currencies extends Component {
           selectedPrice = currency.GBP.rate;
         }
         this.setState({ currency, code, selectedPrice });
-        console.log(currency);
       });
+  };
+
+  changeCurrency = e => {
+    let code = e.target.value;
+    this.getCurrencies(code);
   };
 
   render() {
@@ -49,11 +40,7 @@ export default class Currencies extends Component {
           <div className="card text-white bg-primary">
             <h5 className="card-header">Select Currency</h5>
             <div className="bg-light py-4">
-              <select
-                id="currency-value"
-                onChange={this.changeCurrency}
-                onClick={this.getCurrencies}
-              >
+              <select id="currency-value" onChange={this.changeCurrency}>
                 <option>select currency</option>
                 {this.state.codes.map(code => (
                   <option key={code} value={code}>
