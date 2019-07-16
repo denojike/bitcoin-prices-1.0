@@ -18,7 +18,6 @@ export default class Currencies extends Component {
     } else if (code === "GBP") {
       selectedPrice = this.props.currency.GBP.rate;
     }
-
     this.setState({ code, selectedPrice });
   };
 
