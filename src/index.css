@@ -11,3 +11,21 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.navbar-nav.navbar-center {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+}
+
+select {
+  padding: 2rem !important;
+}
+
+input {
+  text-align: center;
+  width: 100px;
+}
+
+button {
+}
