@@ -61,7 +61,7 @@ export default class Conversion extends Component {
           <form className="text-center form-group mt-5">
             <div className="card text-white bg-primary">
               <h5 className="card-header">Bitcoin Conversion</h5>
-              <div className="bg-light py-2">
+              <div className="bg-light py-3">
                 <span className="mr-4">
                   <select name="code" onChange={this.changeCode}>
                     {this.state.codes.map(code => (
