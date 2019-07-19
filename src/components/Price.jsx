@@ -48,7 +48,7 @@ export default class Price extends Component {
           <form className="text-center form-group mt-5">
             <div className="card text-white bg-primary">
               <h5 className="card-header">Select Currency</h5>
-              <div className="bg-light py-4">
+              <div className="bg-light py-2">
                 <select id="currency-value" onChange={this.changeCurrency}>
                   <option value={code}>{code}</option>
                   {codes.map(code => (

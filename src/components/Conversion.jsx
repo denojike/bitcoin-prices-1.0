@@ -14,20 +14,6 @@ export default class Conversion extends Component {
   };
 
   componentDidMount = () => {
-    // const getBtcValue = () => {
-    //   const url = `https://blockchain.info/tobtc?currency=${
-    //     this.state.code
-    //   }&value=${this.state.amount}`;
-
-    //   axios
-    //     .get(url)
-    //     .then(converted => {
-    //       const btcValue = converted.data;
-    //       this.setState({ btcValue, url });
-    //       console.log(btcValue);
-    //     })
-    //     .catch(error => console.log(error));
-    // };
     const code = this.state.code;
     const amount = this.state.amount;
     this.getBtcValue(code, amount);
@@ -41,8 +27,6 @@ export default class Conversion extends Component {
       .then(converted => {
         const btcValue = converted.data;
         this.setState({ btcValue, url });
-        // // console.log(btcValue);
-        // console.log(`CDM ${url}`);
       })
       .catch(error => console.log(error));
   };
@@ -77,7 +61,7 @@ export default class Conversion extends Component {
           <form className="text-center form-group mt-5">
             <div className="card text-white bg-primary">
               <h5 className="card-header">Bitcoin Conversion</h5>
-              <div className="bg-light py-4">
+              <div className="bg-light py-2">
                 <span className="mr-4">
                   <select name="code" onChange={this.changeCode}>
                     {this.state.codes.map(code => (
@@ -105,7 +89,7 @@ export default class Conversion extends Component {
             <h5 className="card-header"> {this.state.code} to Bitcoin</h5>
             <h4
               id="price"
-              className="card-body bg-light text-dark heading-2 py-4"
+              className="card-body bg-light text-dark heading-2 py-3"
             >
               {`${this.state.amount}${this.state.code} =  ${
                 this.state.btcValue

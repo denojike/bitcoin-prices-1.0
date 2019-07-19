@@ -2,7 +2,7 @@ import React from "react";
 import { BrowserRouter, Route, Redirect } from "react-router-dom";
 import Price from "./components/Price";
 import Navbar from "./components/Navbar";
-import "./App.css";
+// import "./App.css";
 import Conversion from "./components/Conversion";
 
 function App() {

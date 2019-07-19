@@ -19,7 +19,6 @@ code {
 }
 
 select {
-  padding: 2rem !important;
 }
 
 input {
@@ -27,5 +26,6 @@ input {
   width: 100px;
 }
 
-button {
+button .text-white {
+  text-decoration: none;
 }
