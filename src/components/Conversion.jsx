@@ -6,8 +6,7 @@ import axios from "axios";
 
 export default class Conversion extends Component {
   state = {
-    codes: ["USD", "EUR", "CAD"],
-    amount: "500",
+    amount: "1",
     code: "USD",
     btcValue: "",
     url: ""
@@ -64,7 +63,7 @@ export default class Conversion extends Component {
               <div className="bg-light py-3">
                 <span className="mr-4">
                   <select name="code" onChange={this.changeCode}>
-                    {this.state.codes.map(code => (
+                    {this.props.codes.map(code => (
                       <option key={code} value={code}>
                         {code}
                       </option>
