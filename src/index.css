@@ -7,17 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
-.navbar-nav.navbar-center {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-}
-
 select {
 }
 
@@ -28,4 +17,12 @@ input {
 
 button .text-white {
   text-decoration: none;
+}
+
+.my-btn {
+  transition: all 0.4s linear;
+}
+
+.my-btn:hover {
+  background: gray !important;
 }
