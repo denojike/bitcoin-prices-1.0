@@ -16,13 +16,22 @@ input {
 }
 
 button .text-white {
-  text-decoration: none;
+  color: #eee !important;
 }
 
 .my-btn {
   transition: all 0.4s linear;
+  color: #fff !important;
 }
 
-.my-btn:hover {
-  background: gray !important;
+a {
+  color: #fff;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.card-header {
+  color: yellow !important;
 }
