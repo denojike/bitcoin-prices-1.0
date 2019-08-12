@@ -30,7 +30,7 @@ a {
 
 a:hover {
   text-decoration: none;
-  color: #fff !important;
+  color: yellow !important;
 }
 
 .card-header {
