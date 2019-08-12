@@ -30,8 +30,10 @@ a {
 
 a:hover {
   text-decoration: none;
+  color: #fff !important;
 }
 
 .card-header {
   color: yellow !important;
+  font-weight: 300;
 }
