@@ -15,15 +15,6 @@ input {
   width: 100px;
 }
 
-button .text-white {
-  color: #eee !important;
-}
-
-.my-btn {
-  transition: all 0.4s linear;
-  color: #fff !important;
-}
-
 a {
   color: #fff;
 }
@@ -34,6 +25,15 @@ a:hover {
 }
 
 .card-header {
-  color: yellow !important;
   font-weight: 300;
+}
+
+.my-btn {
+  background-color: #446e9b !important;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+
+.my-btn:hover {
+  transform: scaleY(1.2);
 }

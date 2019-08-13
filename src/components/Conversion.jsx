@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Navbar from "./Navbar";
 
 export default class Conversion extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class Conversion extends Component {
     } = this.props;
     return (
       <div>
+        <Navbar linkName="Btc Price" linkPath="/price" />
         <div className="container">
           <form className="text-center form-group mt-5">
             <div className="card text-white bg-primary">

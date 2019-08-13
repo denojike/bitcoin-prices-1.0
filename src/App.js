@@ -68,7 +68,6 @@ class App extends Component {
 
     return (
       <BrowserRouter>
-        <Navbar />
         <Route
           exact
           path="/"
